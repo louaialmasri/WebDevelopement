@@ -1,0 +1,311 @@
+@media (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+    margin: 5px;
+    font-size: xx-large;
+  }
+
+  fieldset {
+    all: unset;
+    font-size: larger;
+    border: 3px solid;
+    margin: 5px;
+  }
+
+  #username,
+  #password,
+  #confirmPw {
+    font-size: larger;
+    margin: 5px;
+    width: 60%;
+  }
+
+  .container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    display: inline;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+
+  .header {
+    width: 100%;
+    align-items: left;
+    text-align: left;
+  }
+
+  #profile-text p,
+  dl,
+  dd,
+  dt {
+    font-size: x-large;
+  }
+
+  #profile-text img {
+    width: 40%;
+  }
+
+  .danger,
+  .positive {
+    height: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: larger;
+    margin-left: 3px;
+    padding: 0;
+    height: auto;
+  }
+  form {
+    width: 100%;
+    text-align: center;
+  }
+
+  label {
+    font-size: smaller;
+  }
+
+  fieldset {
+    border-style: dotted;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    height: 5vh;
+    margin: 5px;
+  }
+  h1,
+  h2 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    font-size: larger;
+    color: #1da1f2;
+  }
+  #profile-text p,
+  dl,
+  dd,
+  dt {
+    font-size: large;
+  }
+  #profile-text img {
+    width: 70%;
+    height: auto;
+  }
+  .positive,
+  .danger,
+  .neutral {
+    height: 40px;
+  }
+  .neutral {
+    width: 1em;
+  }
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(253, 248, 242);
+}
+a {
+  text-decoration: none;
+  color: green;
+  font-weight: bolder;
+  padding: 2px;
+}
+a:hover {
+  color: blue;
+  opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.danger {
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0px 20px;
+  margin: 10px;
+  text-align: center;
+}
+.danger:hover {
+  background-color: red;
+  color: white;
+}
+
+#fieldset-settings {
+  padding: 1em;
+}
+
+fieldset input[type="text"] {
+  margin: 5px;
+  width: 50%;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#profile-img {
+  border-radius: 0%;
+}
+#profile-text {
+  border: 2px solid;
+  width: 90%;
+  font-size: small;
+  padding: 5px;
+}
+
+#profile-text img {
+  float: left;
+  width: 30%;
+  height: auto;
+}
+
+input[type="submit"] {
+  margin-top: 1vh;
+}
+
+hr {
+  width: 100%;
+  border: 1px dotted;
+}
+
+.neutral {
+  border: none;
+  background-color: grey;
+  width: auto;
+  height: 40px;
+  font-size: large;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.requests {
+  display: inline;
+  font-size: smaller;
+}
+
+.freunde {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-right: 5px;
+  text-align: left;
+  width: 95%;
+}
+
+ul.freunde {
+  padding: 3px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.freund {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.adder {
+  width: 70%;
+}
+
+.requests form {
+  width: 20%;
+  display: inline;
+}
+
+.chatsend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.positive {
+  color: green;
+  background-color: transparent;
+  border: 2px solid green;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0px 20px;
+  margin: 10px;
+  text-align: center;
+}
+.positive:hover {
+  background-color: green;
+  color: white;
+}
+/* CSS-Stil für gültige Eingabe */
+.valid {
+  border: 2px solid green;
+}
+
+/* CSS-Stil für ungültige Eingabe */
+.invalid {
+  border: 2px solid red;
+}
+.message {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.text {
+  text-align: left;
+  flex: 1 0 auto;
+}
+
+.timestamp {
+  text-align: right;
+  flex: 0 1 auto;
+  color: grey;
+  font-size: smaller;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrong{
+  border: 3px solid red;
+}
+
+.correct{
+  border: 3px solid green;
+}
+
+
+button:hover, input[type="submit"]:hover{
+  cursor: pointer;
+}
